@@ -1,4 +1,5 @@
 import "../styles/layout/footer.scss";
+import { NAVIGATION } from "../utils/constands";
 
 const Footer = () => {
   return (
@@ -13,10 +14,13 @@ const Footer = () => {
         </div>
         <div className="furniro-links-footer">
           <span>Links</span>
-          <p>Home</p>
-          <p>Shop</p>
-          <p>About</p>
-          <p>Contact</p>
+          {NAVIGATION.map((nav, index) => {
+            return (
+              <a href={nav.route} key={index}>
+                {nav.label}
+              </a>
+            );
+          })}
         </div>
         <div className="furniro-help-footer">
           <span>Help</span>

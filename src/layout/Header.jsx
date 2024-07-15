@@ -1,9 +1,12 @@
 /* eslint-disable no-unused-vars */
-import PrimaryLogo from "../assets/Logo/Frame 168.png";
-import AlertIcon from "../assets/icons/akar-icons_search.png";
-import Favorites from "../assets/icons/akar-icons_heart.png";
-import SearchIcon from "../assets/icons/akar-icons_search.png";
-import CartIcon from "../assets/icons/ant-design_shopping-cart-outlined.png";
+import {
+  PrimaryLogo,
+  AlertIcon,
+  Favorites,
+  SearchIcon,
+  CartIcon,
+} from "../assets";
+import { NAVIGATION } from "../utils/constands";
 
 import "../styles/layout/header.scss";
 
@@ -14,10 +17,13 @@ const Header = () => {
       <img src={PrimaryLogo} alt="Logo" className="logo" />
       {/* <!-- Add Nav Links for the website --> */}
       <nav>
-        <a href="/">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="#">About</a>
-        <a href="/contact.html">Contact</a>
+        {NAVIGATION.map((nav, index) => {
+          return (
+            <a href={nav.route} key={index}>
+              {nav.label}
+            </a>
+          );
+        })}
       </nav>
       {/* <!-- Add CTAs --> */}
       <div className="cta">
