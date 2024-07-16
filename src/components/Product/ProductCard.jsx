@@ -1,64 +1,37 @@
+/* eslint-disable react/prop-types */
 import React from "react";
-import { useState, useEffect } from "react";
 import "../../styles/components/ProductCard.scss";
-import TestImage from "../../assets/image.png";
+import { ShareIcon, HeartIcon, CompareIcon } from "../../assets";
 
-const ProductCard = () => {
-  // eslint-disable-next-line no-unused-vars
-  const [productData, setProductData] = useState([]);
-  useEffect(() => {
-    try {
-      console.log("object");
-    } catch (error) {
-      console.log(error);
-    }
-  }, []);
-
+const ProductCard = ({ id, imgUrl, title, desc, price }) => {
   return (
     <React.Fragment>
-      <div className="product__images-item">
+      <div className="product__images-item" key={id}>
         <div className="product-image-container">
-          <img src={TestImage} alt="Syltherine" />
-          <span className="product-discount label">-20%</span>
+          <img src={imgUrl} alt="Syltherine" width={285} height={301} />
         </div>
         <div className="product-overlay">
           <button>Add to cart</button>
           <div className="user-controls">
             <p>
-              <img
-                src="public/assets/UserInteraction/gridicons_share.png"
-                alt="Share"
-                height="16px"
-                width="16px"
-              />
+              <img src={ShareIcon} alt="Share" height="16px" width="16px" />
               Share
             </p>
             <p>
-              <img
-                src="public/assets/UserInteraction/compare-svgrepo-com 1.png"
-                alt="Compare"
-                height="16px"
-                width="16px"
-              />
+              <img src={CompareIcon} alt="Compare" height="16px" width="16px" />
               Compare
             </p>
             <p>
-              <img
-                src="public/assets/UserInteraction/Heart.png"
-                alt="Like"
-                height="16px"
-                width="16px"
-              />
+              <img src={HeartIcon} alt="Like" height="16px" width="16px" />
               Like
             </p>
           </div>
         </div>
         <div className="product__images-desc">
-          <h3>Syltherine</h3>
-          <p>Stylish cafe chair</p>
+          <h3>{title}</h3>
+          <p>{desc}</p>
           <div className="price">
-            <span className="discounted-price">Rp 2.500.000</span>
-            <span className="actual-price">Rp 3.500.000</span>
+            <span className="discounted-price">{price}</span>
           </div>
         </div>
       </div>

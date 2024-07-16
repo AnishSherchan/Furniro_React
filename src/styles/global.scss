@@ -8,6 +8,9 @@
 .btn {
   cursor: pointer;
 }
+img {
+  object-fit: contain;
+}
 .label {
   position: absolute;
   top: 24px;
