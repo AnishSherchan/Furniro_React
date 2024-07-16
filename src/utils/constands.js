@@ -16,3 +16,5 @@ export const NAVIGATION = [
     route: "/contact",
   },
 ];
+
+export const API_URL = "https://fakestoreapi.com/";
