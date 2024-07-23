@@ -8,7 +8,7 @@ const ProductCard = ({ id, imgUrl, title, desc, price }) => {
     <React.Fragment>
       <div className="product__images-item" key={id}>
         <div className="product-image-container">
-          <img src={imgUrl} alt="Syltherine" width={285} height={301} />
+          <img src={imgUrl} alt={title} />
         </div>
         <div className="product-overlay">
           <button>Add to cart</button>
