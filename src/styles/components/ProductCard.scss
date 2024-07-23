@@ -5,8 +5,13 @@
 }
 
 .product-image-container {
+  height: 301px;
   .product-discount {
     background-color: #e97171;
+  }
+  img {
+    height: 100%;
+    width: 285px;
   }
   .new-label {
     background-color: #2ec1ac;
@@ -23,6 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
   opacity: 0;
   backdrop-filter: blur(3px);
