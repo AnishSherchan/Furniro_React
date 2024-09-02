@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "../../styles/components/ProductCard.scss";
+import "../../styles/ProductCard.scss";
 import { ShareIcon, HeartIcon, CompareIcon } from "../../assets";
 
 const ProductCard = ({ id, imgUrl, title, desc, price }) => {

@@ -1,15 +1,22 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+import { useContext, useEffect } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { AppContext } from "../context";
 
 const Layout = ({ children }) => {
+  const { fetchProduct } = useContext(AppContext);
+
+  useEffect(() => {
+    fetchProduct();
+  }, []);
+
   return (
-    <React.Fragment>
+    <>
       <Header />
       {children}
       <Footer />
-    </React.Fragment>
+    </>
   );
 };
 

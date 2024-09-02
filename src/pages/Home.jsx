@@ -1,9 +1,12 @@
-import Product from "../components/Product";
+import Category from "../components/landing/Category";
+import HeroSection from "../components/landing/HeroSection";
+import Products from "../components/landing/ProductSection";
 const Home = () => {
   return (
     <div>
-      <p>Home</p>
-      <Product />
+      <HeroSection />
+      <Category />
+      <Products />
     </div>
   );
 };
