@@ -10,7 +10,6 @@ export const AppContextProvider = (prop) => {
     try {
       const data = await fetch(`${API_URL}products?limit=15`);
       const response = await data.json();
-      console.log(response);
       if (response?.length > 0) {
         // setProductData((prevState) => [...prevState, ...response]);
         setProductData(response);

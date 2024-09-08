@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
+import { useNavigate } from "react-router-dom";
 
 import "../../styles/product.scss";
 import ProductCard from "../product/ProductCard";
@@ -11,6 +12,7 @@ import SectionTitle from "../../layout/SectionTitle";
 // eslint-disable-next-line no-unused-vars
 const Products = () => {
   // eslint-disable-next-line no-unused-vars
+  const navigate = useNavigate();
   const { products } = useContext(AppContext);
 
   return (
@@ -20,6 +22,7 @@ const Products = () => {
         {products?.map((product) => {
           return (
             <ProductCard
+              onClick={() => navigate(`/product/${product.id}`)}
               key={product.id}
               title={
                 product.title.length > 15

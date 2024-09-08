@@ -1,5 +1,5 @@
 import PrimaryLogo from "./logo/Frame 168.png";
-import AlertIcon from "./icons/akar-icons_search.png";
+import AlertIcon from "./icons/mdi_account-alert-outline.png";
 import Favorites from "./icons/akar-icons_heart.png";
 import SearchIcon from "./icons/akar-icons_search.png";
 import CartIcon from "./icons/ant-design_shopping-cart-outlined.png";

@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+import { NavLink } from "react-router-dom";
+
 import {
   PrimaryLogo,
   AlertIcon,
@@ -19,9 +21,9 @@ const Header = () => {
       <nav>
         {NAVIGATION.map((nav, index) => {
           return (
-            <a href={nav.route} key={index}>
+            <NavLink to={nav.route} key={index}>
               {nav.label}
-            </a>
+            </NavLink>
           );
         })}
       </nav>
