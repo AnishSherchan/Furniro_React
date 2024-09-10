@@ -6,6 +6,7 @@ export const AppContext = createContext("");
 
 export const AppContextProvider = (prop) => {
   const [products, setProductData] = useState([]);
+  
   const fetchProduct = async () => {
     try {
       const data = await fetch(`${API_URL}products?limit=15`);
