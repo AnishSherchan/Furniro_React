@@ -1,0 +1,15 @@
+.product-container {
+  margin-top: 45px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; // Responsive width
+  height: 100%; // Responsive height
+}
