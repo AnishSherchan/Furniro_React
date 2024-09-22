@@ -46,3 +46,8 @@ img {
   padding: 12px 5px;
   border-radius: 100%;
 }
+
+.backdrop-filter {
+  backdrop-filter: blur(3px);
+  height: 100%;
+}

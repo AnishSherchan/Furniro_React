@@ -10,6 +10,11 @@ import HeroImage from "./images/HeroImage.png";
 import CategoryBedRoom from "./images/BedRoom.png";
 import CategoryDining from "./images/Dining.png";
 import CategoryLiving from "./images/LivingRoom.png";
+import ContactBg from "./images/ContactBg.png";
+import Logo from "./logo/Meubel House_Logos-05.svg";
+import Clock from "./icons/clock.svg";
+import Location from "./icons/location.svg";
+import Phone from "./icons/phone.svg";
 
 export {
   PrimaryLogo,
@@ -24,4 +29,9 @@ export {
   CategoryBedRoom,
   CategoryDining,
   CategoryLiving,
+  ContactBg,
+  Logo,
+  Clock,
+  Phone,
+  Location,
 };

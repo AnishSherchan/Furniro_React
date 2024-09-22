@@ -1,0 +1,111 @@
+@import "./colors.scss";
+
+.contact_hero {
+  position: relative;
+  height: 316px;
+  background-image: url("../assets/images/ContactBg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-content: center;
+    flex-wrap: wrap;
+
+    h2 {
+      font-weight: 500;
+    }
+  }
+  .navigation {
+    cursor: pointer;
+
+    .link {
+      text-decoration: none;
+      color: black;
+
+      span {
+        font-weight: 600;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  margin-bottom: 50px;
+
+  .contact-heading {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    h2 {
+      font-weight: 500;
+    }
+    span {
+      display: block;
+      color: $text-light;
+      max-width: 644px;
+    }
+  }
+
+  .form {
+    display: flex;
+    margin: auto;
+    .information {
+      display: flex;
+      flex-direction: column;
+
+      gap: 42px;
+
+      .information-data {
+        display: flex;
+        gap: 30px;
+        align-items: start;
+        flex-wrap: wrap;
+        div {
+          p {
+            max-width: 212px;
+          }
+        }
+      }
+    }
+
+    form {
+      padding-left: 100px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+
+        input,
+        textarea {
+          color: $text-color;
+          padding: 25px 31px;
+          border-radius: 10px;
+          border: 1px $text-light-1 solid;
+        }
+      }
+      .btn-container {
+        display: block;
+      }
+    }
+  }
+}

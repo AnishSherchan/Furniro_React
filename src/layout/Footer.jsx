@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import "../styles/layout/footer.scss";
 import { NAVIGATION } from "../utils/constands";
 
@@ -16,9 +18,9 @@ const Footer = () => {
           <span>Links</span>
           {NAVIGATION.map((nav, index) => {
             return (
-              <a href={nav.route} key={index}>
+              <NavLink to={nav.route} key={index}>
                 {nav.label}
-              </a>
+              </NavLink>
             );
           })}
         </div>

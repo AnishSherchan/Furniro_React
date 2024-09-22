@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 
 import "./styles/global.scss";
+import "./styles/typography.scss";
 import { AppContextProvider } from "./context/index.jsx";
 
 import Layout from "./layout/Layout.jsx";
