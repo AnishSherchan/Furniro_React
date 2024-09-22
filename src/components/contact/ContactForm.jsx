@@ -14,7 +14,6 @@ const ContactForm = () => {
   const { loading } = useSelector((state) => {
     return {
       loading: state.contact.loading,
-      // hi
       payload: state.contact.payload,
       error: state.contact.error,
     };
