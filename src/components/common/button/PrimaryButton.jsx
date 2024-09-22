@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-// HI
 const PrimaryButton = ({ title, handleClick, type, disabled }) => {
   return (
     <button
